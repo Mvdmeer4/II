@@ -7,6 +7,16 @@
   box-sizing:border-box;  
 }
 
+@font-face {
+  font-family: 'Bartex';
+  src: url('fonts/Bartex (1).woff2') format('woff2');
+  
+}
+
+body {
+  font-family: 'Bartex', sans-serif;
+}
+
 body {
   margin:0;
 }
@@ -16,24 +26,28 @@ button:not([disabled]) {
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
+  max-height: 80vh;
+  display: block; 
+  margin: 0; 
+  float: left;
 }
 
 
-
-
+body{
+  background-color: #de1f82;
+  
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 :root {
-  --color-headings:crimson
+  --color-headings: #facde5; 
   /* ... */
 
 }
-
-
 
 
 
@@ -42,8 +56,17 @@ img {
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  color: var(--color-headings);
+  font-family: 'Bartex';
+  text-align: center;  
+  transition: color 0.3s; /* Voeg een vloeiende overgang toe */
 }
+
+h1:hover {
+  color: #0b76d3;
+
+}
+
 
 /* ... */
 
