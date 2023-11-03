@@ -2,6 +2,13 @@
 /* CSS REMEDY */
 /**************/
 
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+/* responsive bron: https://www.w3schools.com/html/html_responsive.asp */
+
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -15,10 +22,8 @@
 
 body {
   font-family: 'Bartex', sans-serif;
-}
-
-body {
-  margin:0;
+  margin: 0;
+  /* cursor: url('images/icons8-brush-67.png'), auto; */
 }
 
 button:not([disabled]) {
@@ -36,6 +41,9 @@ img {
 
 body{
   background-color: #de1f82;
+  background-image: url('../images/Barbie\ Achtergrond\ II.png');
+background-blend-mode: soft-light; 
+background-size: cover;
   
 }
 
@@ -63,9 +71,10 @@ h1 {
 }
 
 h1:hover {
-  color: #0b76d3;
+  color: #000000;
 
 }
+
 
 
 /* ... */
