@@ -52,9 +52,9 @@ background-size: cover;
 /*********************/
 
 :root {
-  --color-headings: #facde5; 
+  --color-headings:  #de1f82; 
   /* ... */
-
+ 
 }
 
 
@@ -66,14 +66,71 @@ background-size: cover;
 h1 {
   color: var(--color-headings);
   font-family: 'Bartex';
-  text-align: center;  
-  transition: color 0.3s; /* Voeg een vloeiende overgang toe */
+  text-align: center; /* Plaats de tekst in het midden */
+  margin-left: -10%; /* Verschuif de tekst 20% naar links vanuit het midden */
+  transition: color 0.3s; 
 }
+
 
 h1:hover {
-  color: #000000;
+  color: #facde5;
 
 }
+
+p {
+  text-align: left;
+}
+  
+#bovenin-vak {
+  background-color: #FF9900; /* Achtergrondkleur van het vak */
+  color: #FF9900; /* Tekstkleur in het vak */
+  padding:10px; /* Ruimte rondom de tekst binnen het vak */
+  text-align: center; /* Centreer de tekst binnen het vak */
+  border-bottom: 30px solid #E0218A; /* Voeg een dunne onderste rand toe aan het vak */
+  
+}
+
+.kleineAfbeelding {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  top: 25px;
+  right: 40px;
+}
+
+#overlapping-image {
+  position: absolute;
+  top: 35px; /* Pas deze waarde aan naar wens */
+  left: 55%; /* Plaatst de afbeelding net iets rechts van het midden van de breedte van het scherm */
+  transform: translateX(-50%); /* Centreert de afbeelding ten opzichte van zijn eigen breedte */
+  max-width: 100%; /* Zorgt ervoor dat de afbeelding niet breder is dan het scherm */
+  height: auto; /* Behoudt de juiste verhoudingen van de afbeelding */
+  z-index: 999; /* Zorgt ervoor dat de afbeelding boven de header ligt */
+}
+
+#onderaan-vak {
+  border: 1px solid #FACDE5;
+  background-color: #FACDE5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  padding: 5px;
+  text-align: justify;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end; /* Plaatst de afbeeldingen aan de rechterkant van het vak */
+  align-items: center; /* Centreert de afbeeldingen verticaal */
+}
+
+#onderaan-vak img {
+  max-height: 100%; /* Zorgt ervoor dat de hoogte van de afbeeldingen binnen het tekstvak blijft */
+  margin-left: 10px; /* Voegt een tussenruimte van 10px tussen de afbeeldingen toe */
+}
+
+
+
 
 
 
