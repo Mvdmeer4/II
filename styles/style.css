@@ -2,17 +2,20 @@
 /* CSS REMEDY */
 /**************/
 
+/* responsive bron: https://www.w3schools.com/html/html_responsive.asp */
 @media screen and (min-width: 80rem) {
   .container {
     margin: 1em 2em;
   }
 }
-/* responsive bron: https://www.w3schools.com/html/html_responsive.asp */
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
+  
 }
+
+/* cursor: url('images/minimal-barbie-pointer.png'), auto;  */
 
 @font-face {
   font-family: 'Bartex';
@@ -23,12 +26,9 @@
 body {
   font-family: 'Bartex', sans-serif;
   margin: 0;
-  /* cursor: url('images/icons8-brush-67.png'), auto; */
+  
 }
 
-button:not([disabled]) {
-  cursor:pointer;
-}
 
 img {
   max-width: 100%;
@@ -40,8 +40,8 @@ img {
 
 
 body{
-  background-color: #de1f82;
-  background-image: url('../images/Barbie\ Achtergrond\ II.png');
+background-color: #de1f82;
+background-image: url('../images/Barbie\ Achtergrond\ II.png');
 background-blend-mode: soft-light; 
 background-size: cover;
   
@@ -51,12 +51,13 @@ background-size: cover;
 /* CUSTOM PROPERTIES */
 /*********************/
 
+/* nog in orde maken */
+
 :root {
   --color-headings:  #de1f82; 
   /* ... */
  
 }
-
 
 
 /********************/
@@ -66,15 +67,14 @@ background-size: cover;
 h1 {
   color: var(--color-headings);
   font-family: 'Bartex';
-  text-align: center; /* Plaats de tekst in het midden */
-  margin-left: -10%; /* Verschuif de tekst 20% naar links vanuit het midden */
+  text-align: center; 
+  margin-left: -10%; 
   transition: color 0.3s; 
 }
 
 
 h1:hover {
   color: #facde5;
-
 }
 
 p {
@@ -82,58 +82,192 @@ p {
 }
   
 #bovenin-vak {
-  background-color: #FF9900; /* Achtergrondkleur van het vak */
-  color: #FF9900; /* Tekstkleur in het vak */
-  padding:10px; /* Ruimte rondom de tekst binnen het vak */
-  text-align: center; /* Centreer de tekst binnen het vak */
-  border-bottom: 30px solid #E0218A; /* Voeg een dunne onderste rand toe aan het vak */
+  background:#FF9900;
+  color: #FF9900; 
+  padding:10px; 
+  text-align: center; 
+  border-bottom: 1em solid #E0218A; 
   
 }
 
+/* Barbie logo rechtsboven */
 .kleineAfbeelding {
   width: 50px;
   height: auto;
   position: fixed;
   top: 25px;
   right: 40px;
+  filter: 
+  drop-shadow(0 0 25px #E0218A)
+  drop-shadow(0 0 25px #E0218A)
+  drop-shadow(0 0 25px #E0218A);
+  
 }
 
+/* Barbie glitter logo bij titel */
 #overlapping-image {
   position: absolute;
-  top: 35px; /* Pas deze waarde aan naar wens */
-  left: 55%; /* Plaatst de afbeelding net iets rechts van het midden van de breedte van het scherm */
-  transform: translateX(-50%); /* Centreert de afbeelding ten opzichte van zijn eigen breedte */
-  max-width: 100%; /* Zorgt ervoor dat de afbeelding niet breder is dan het scherm */
-  height: auto; /* Behoudt de juiste verhoudingen van de afbeelding */
-  z-index: 999; /* Zorgt ervoor dat de afbeelding boven de header ligt */
+  top: 35px; 
+  left: 55%; 
+  transform: translateX(-50%); 
+  max-width: 100%; 
+  height: auto; 
+  z-index: 999; 
+  transition: transform 0.3s ease;
 }
 
-#onderaan-vak {
+#overlapping-image:hover {
+  transform: translateX(-5px); 
+}
+
+ul:nth-of-type(2) {
   border: 1px solid #FACDE5;
   background-color: #FACDE5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 9pt;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-size: 9pt; */
   padding: 5px;
-  text-align: justify;
+  /* text-align: justify; */
   width: 100%;
   position: fixed;
   bottom: 0;
   height: 100px;
   display: flex;
-  justify-content: flex-end; /* Plaatst de afbeeldingen aan de rechterkant van het vak */
-  align-items: center; /* Centreert de afbeeldingen verticaal */
+  /* justify-content: flex-end;  */
+  align-items: center; 
+  list-style-type: none;
+  gap:1em;
 }
 
-#onderaan-vak img {
-  max-height: 100%; /* Zorgt ervoor dat de hoogte van de afbeeldingen binnen het tekstvak blijft */
-  margin-left: 10px; /* Voegt een tussenruimte van 10px tussen de afbeeldingen toe */
+ul li img {
+  max-height: fit-content; 
+  /* margin-left: 10px;  */
+}
+
+/* .afbeeldingen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px; 
+  list-style-type: none;
+} */
+
+ul:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px; 
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+
+body ul li button {
+  background-color: #E0218A;
+  border: 4px solid #ffffff;
+  padding: .5em;
+  color: white;
+  font-weight: 900;
+  font-size: 1.1em;
+  margin: .5em;
+
+
+}
+
+body ul li button:active{
+  color: green;
+}
+
+body ul li button:hover{
+  background-color: #FACDE5;
+  color: #de1f82;
+  border-color: #de1f82;
+}
+
+footer {
+  font-family:'Bartex';
+  background: #FACDE5;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1em solid #FF9900; 
+}
+
+.afbeeldingen-lijst {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.afbeeldingen-lijst li {
+  margin: 10px;
+  color: black;
+  transition: transform 0.3s ease; /* Voeg een overgang toe voor soepele beweging */
+}
+
+.afbeeldingen-lijst li:hover {
+  transform: translateY(-5px); /* Beweeg de afbeelding omhoog bij zweven */
+}
+
+.afbeeldingen-lijst img {
+  width: 150px;
+  height: auto;
+}
+
+
+/* 
+
+ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px; 
+  list-style-type: none;
+}
+
+ul:nth-of-type(2) li {
+  display: flex;
+  flex-direction: column;
+} */
+
+.afbeeldingen-container img {
+  width: 150px;
+  height: auto;
+  margin: 10px 5px;
+}
+
+.popup{
+  display: grid;
+  display: none;
+  
+}
+
+.popup img:first-of-type{
+  scale: 2em;
 }
 
 
 
-
-
-
+/* bronnen hier zetten */
 /* ... */
 
 
+
+.welkom-container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FF9900;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
