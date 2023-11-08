@@ -21,31 +21,6 @@
   
 }
 
-body {
-  font-family: 'Bartex', sans-serif;
-  margin: 0;
-  cursor: url('../images/Cursor3.png'), auto;
-  }
-  
-
-img {
-  max-width: 100%;
-  max-height: 80vh;
-  display: block; 
-  margin: 0; 
-  float: left;
-}
-
-
-body{
-background-color: #de1f82;
-background-image: url('../images/Barbie\ Achtergrond\ II.png');
-background-blend-mode: soft-light; 
-background-size: cover;
-background-attachment: fixed;
-  
-}
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -61,6 +36,12 @@ background-attachment: fixed;
     font-family: 'Bartex', sans-serif;
     margin: 0;
     color: var(--color-text); 
+    cursor: url('../images/Cursor3.png'), auto;
+    background-color: #de1f82;
+    background-image: url('../images/Barbie\ Achtergrond\ II.png');
+    background-blend-mode: soft-light; 
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   h1 {
@@ -75,6 +56,18 @@ background-attachment: fixed;
     color: #facde5;
   }
   
+  p {
+    text-align: left;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block; 
+    margin: 0; 
+    float: left;
+  }
+
   #bovenin-vak {
     background: var(--color-accent); 
     color: var(--color-accent);
@@ -106,23 +99,6 @@ background-attachment: fixed;
 /********************/
 /* ALGEMENE STYLING */
 /********************/
-
-h1 {
-  color: var(--color-headings);
-  font-family: 'Bartex';
-  text-align: center; 
-  margin-left: -10%; 
-  transition: color 0.3s; 
-}
-
-
-h1:hover {
-  color: #facde5;
-}
-
-p {
-  text-align: left;
-}
   
 #bovenin-vak {
   background:#FF9900;
@@ -132,6 +108,7 @@ p {
   border-bottom: 1em solid #E0218A; 
   
 }
+
 
 /* Barbie logo rechtsboven */
 .kleineAfbeelding {
@@ -171,16 +148,12 @@ p {
 ul:nth-of-type(2) {
   border: 0.063em solid #FACDE5;
   background-color: #FACDE5;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-size: 9pt; */
   padding: 0.313em;
-  /* text-align: justify; */
   width: 100%;
   position: fixed;
   bottom: 0;
   height: 6.25em;
   display: flex;
-  /* justify-content: flex-end;  */
   align-items: center; 
   list-style-type: none;
   gap:1em;
@@ -233,15 +206,6 @@ body ul li button:focus{
  scale: 1;
 }
 
-footer {
-  font-family:'Bartex';
-  background: #FACDE5;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  border-bottom: 1em solid #FF9900; 
-}
-
 .afbeeldingen-lijst {
   list-style: none;
   padding: 0;
@@ -275,6 +239,15 @@ footer {
 .afbeeldingen-container li:hover img {
   /* Logo's gaan iets omhoog bij hover  */
   transform: scale(1.1);
+}
+
+footer {
+  font-family:'Bartex';
+  background: #FACDE5;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1em solid #FF9900; 
 }
 
 .popup{

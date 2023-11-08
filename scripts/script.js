@@ -16,18 +16,6 @@ const text5 = document.getElementById("imageText5");
 // Ik heb nu een display block, die zorgt ervoor dat als ik op een button klik, ik niet van elke button de tekst te zien krijg, deze heb ik aanstaan.
 // Classes gemaakt om de juiste button aan te spreken.
 
-// functie om geluid af te spelen
-function playClickSound() {
-    const clickSound = new Audio('path/naar/jouw/geluid.mp3');
-    clickSound.play();
-  }
-
-//   Tekst weergeven en geluid afspelen
-  function showTextAndPlaySound(textElement) {
-    textElement.classList.add("show");
-    playClickSound();
-  }
-
 
 barbieButton1.addEventListener("click", function () {
     text1.classList.add("show");
