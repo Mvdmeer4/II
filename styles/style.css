@@ -15,8 +15,6 @@
   
 }
 
-/* cursor: url('images/minimal-barbie-pointer.png'), auto;  */
-
 @font-face {
   font-family: 'Bartex';
   src: url('fonts/Bartex (1).woff2') format('woff2');
@@ -26,9 +24,9 @@
 body {
   font-family: 'Bartex', sans-serif;
   margin: 0;
+  cursor: url('../images/Cursor3.png'), auto;
+  }
   
-}
-
 
 img {
   max-width: 100%;
@@ -44,6 +42,7 @@ background-color: #de1f82;
 background-image: url('../images/Barbie\ Achtergrond\ II.png');
 background-blend-mode: soft-light; 
 background-size: cover;
+background-attachment: fixed;
   
 }
 
@@ -51,13 +50,57 @@ background-size: cover;
 /* CUSTOM PROPERTIES */
 /*********************/
 
-/* nog in orde maken */
 
 :root {
-  --color-headings:  #de1f82; 
+    --color-headings: #de1f82;
+    --color-text: #ffffff; 
+    
+  }
+  
+  body {
+    font-family: 'Bartex', sans-serif;
+    margin: 0;
+    color: var(--color-text); 
+  }
+  
+  h1 {
+    color: var(--color-headings);
+    font-family: 'Bartex';
+    text-align: center;
+    margin-left: -10%;
+    transition: color 0.3s;
+  }
+  
+  h1:hover {
+    color: #facde5;
+  }
+  
+  #bovenin-vak {
+    background: var(--color-accent); 
+    color: var(--color-accent);
+    padding: 0.625em;
+    text-align: center;
+    border-bottom: 1em solid #E0218A;
+  }
+  
+  .afbeeldingen-lijst li:hover {
+    transform: translateY(-0.312em);
+    background-color: var(--color-accent);
+    color: var(--color-headings);
+  }
+  
+  button {
+    padding:0.625em 1.25;
+    font-size: 1em;
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
   /* ... */
  
-}
+
 
 
 /********************/
@@ -84,7 +127,7 @@ p {
 #bovenin-vak {
   background:#FF9900;
   color: #FF9900; 
-  padding:10px; 
+  padding:0.625em; 
   text-align: center; 
   border-bottom: 1em solid #E0218A; 
   
@@ -92,22 +135,27 @@ p {
 
 /* Barbie logo rechtsboven */
 .kleineAfbeelding {
-  width: 50px;
+  width:3.125em;
   height: auto;
   position: fixed;
-  top: 25px;
-  right: 40px;
+  top: 1.563em;
+  right: 2.5em;
   filter: 
-  drop-shadow(0 0 25px #E0218A)
-  drop-shadow(0 0 25px #E0218A)
-  drop-shadow(0 0 25px #E0218A);
-  
+  drop-shadow(0 0 1.563em #E0218A)
+  drop-shadow(0 0 1.563em #E0218A)
+  drop-shadow(0 0 1.563em #E0218A);
+  transition: transform 0.3s ease;
+}
+
+/* Hover over het logo rechtsboven, erover heen dan draait het */
+.kleineAfbeelding:hover {
+  transform: rotate(360deg); 
 }
 
 /* Barbie glitter logo bij titel */
 #overlapping-image {
   position: absolute;
-  top: 35px; 
+  top: 2.188em; 
   left: 55%; 
   transform: translateX(-50%); 
   max-width: 100%; 
@@ -117,20 +165,20 @@ p {
 }
 
 #overlapping-image:hover {
-  transform: translateX(-5px); 
+  transform: translateX(-0.312em); 
 }
 
 ul:nth-of-type(2) {
-  border: 1px solid #FACDE5;
+  border: 0.063em solid #FACDE5;
   background-color: #FACDE5;
   /* font-family: Arial, Helvetica, sans-serif; */
   /* font-size: 9pt; */
-  padding: 5px;
+  padding: 0.313em;
   /* text-align: justify; */
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 6.25em;
   display: flex;
   /* justify-content: flex-end;  */
   align-items: center; 
@@ -140,22 +188,14 @@ ul:nth-of-type(2) {
 
 ul li img {
   max-height: fit-content; 
-  /* margin-left: 10px;  */
+  
 }
-
-/* .afbeeldingen-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px; 
-  list-style-type: none;
-} */
 
 ul:nth-of-type(1) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px; 
+  margin-top: 9.375em; 
   list-style-type: none;
 }
 
@@ -168,7 +208,7 @@ ul li {
 
 body ul li button {
   background-color: #E0218A;
-  border: 4px solid #ffffff;
+  border: 0.25em solid #ffffff;
   padding: .5em;
   color: white;
   font-weight: 900;
@@ -182,10 +222,15 @@ body ul li button:active{
   color: green;
 }
 
+
 body ul li button:hover{
   background-color: #FACDE5;
   color: #de1f82;
   border-color: #de1f82;
+}
+
+body ul li button:focus{
+ scale: 1;
 }
 
 footer {
@@ -206,40 +251,30 @@ footer {
 }
 
 .afbeeldingen-lijst li {
-  margin: 10px;
+  margin:0.625em;
   color: black;
-  transition: transform 0.3s ease; /* Voeg een overgang toe voor soepele beweging */
+  transition: transform 0.3s ease; 
 }
 
 .afbeeldingen-lijst li:hover {
-  transform: translateY(-5px); /* Beweeg de afbeelding omhoog bij zweven */
+  transform: translateY(-5px); 
 }
 
 .afbeeldingen-lijst img {
-  width: 150px;
+  width: 9.375em;
   height: auto;
 }
 
-
-/* 
-
-ul:nth-of-type(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px; 
-  list-style-type: none;
-}
-
-ul:nth-of-type(2) li {
-  display: flex;
-  flex-direction: column;
-} */
 
 .afbeeldingen-container img {
-  width: 150px;
+  width: 9.375em;
   height: auto;
-  margin: 10px 5px;
+  margin: 0.625em 0.313em;
+}
+
+.afbeeldingen-container li:hover img {
+  /* Logo's gaan iets omhoog bij hover  */
+  transform: scale(1.1);
 }
 
 .popup{
@@ -264,10 +299,15 @@ ul:nth-of-type(2) li {
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 0.625em 1.25em;
+  font-size: 1em;
   background-color: #FF9900;
   color: #fff;
   border: none;
   cursor: pointer;
 }
+
+.show{
+  display: block;
+}
+
