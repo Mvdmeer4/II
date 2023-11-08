@@ -12,6 +12,8 @@ const text3 = document.getElementById("imageText3");
 const text4 = document.getElementById("imageText4");
 const text5 = document.getElementById("imageText5");
 
+var audio = document.querySelector("audio");
+
 
 // Ik heb nu een display block, die zorgt ervoor dat als ik op een button klik, ik niet van elke button de tekst te zien krijg, deze heb ik aanstaan.
 // Classes gemaakt om de juiste button aan te spreken.
@@ -23,7 +25,11 @@ barbieButton1.addEventListener("click", function () {
     text3.classList.remove("show");
     text4.classList.remove("show");
     text5.classList.remove("show");
-    document.getElementById("barbieGroot").src = "../images/Tekengebied 2.png";
+
+    document.getElementById("barbieGroot").src = "./images/Tekengebied 2.png";
+
+    audio.play();
+    console.log("hoi")
 });
 
 barbieButton2.addEventListener("click", function () {
@@ -33,7 +39,7 @@ barbieButton2.addEventListener("click", function () {
     text4.classList.remove("show");
     text5.classList.remove("show");
 
-    document.getElementById("barbieGroot").src = "../images/Tekengebied 3.png";
+    document.getElementById("barbieGroot").src = "./images/Tekengebied 3.png";
 });
 
 barbieButton3.addEventListener("click", function () {
@@ -43,7 +49,7 @@ barbieButton3.addEventListener("click", function () {
     text4.classList.remove("show");
     text5.classList.remove("show");
 
-    document.getElementById("barbieGroot").src = "../images/Tekengebied 4.png";
+    document.getElementById("barbieGroot").src = "./images/Tekengebied 4.png";
 });
 
 barbieButton4.addEventListener("click", function () {
@@ -53,7 +59,7 @@ barbieButton4.addEventListener("click", function () {
     text3.classList.remove("show");
     text5.classList.remove("show");
 
-    document.getElementById("barbieGroot").src = "../images/Tekengebied 5.png";
+    document.getElementById("barbieGroot").src = "./images/Tekengebied 5.png";
 });
 
 barbieButton5.addEventListener("click", function () {
@@ -63,7 +69,7 @@ barbieButton5.addEventListener("click", function () {
     text3.classList.remove("show");
     text4.classList.remove("show");
 
-    document.getElementById("barbieGroot").src = "../images/Tekengebied 6.png";
+    document.getElementById("barbieGroot").src = "./images/Tekengebied 6.png";
 });
 
 

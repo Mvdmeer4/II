@@ -145,6 +145,7 @@
   transform: translateX(-0.312em); 
 }
 
+/* Footer */
 ul:nth-of-type(2) {
   border: 0.063em solid #FACDE5;
   background-color: #FACDE5;
@@ -178,7 +179,7 @@ ul li {
   color: white;
 }
 
-
+/* Buttons */
 body ul li button {
   background-color: #E0218A;
   border: 0.25em solid #ffffff;
@@ -236,8 +237,8 @@ body ul li button:focus{
   margin: 0.625em 0.313em;
 }
 
+ /* Logo's gaan iets omhoog bij hover  */
 .afbeeldingen-container li:hover img {
-  /* Logo's gaan iets omhoog bij hover  */
   transform: scale(1.1);
 }
 
@@ -260,16 +261,19 @@ footer {
   scale: 2em;
 }
 
+
 .show{
   display: block;
 }
 
 
-/* bronnen hier zetten */
+
+/* Bronnen */
 /* ... */
 
-/* (Mattel, sd)
+/* 
 
+(Mattel, sd)
 https://www.officetimeline.com/blog/history-of-barbie-timeline 
 https://stage.onestore.barbie.com/en-us/about/history.html
 https://en.wikipedia.org/wiki/List_of_Barbie_films
@@ -292,6 +296,7 @@ https://devdevout.com/px-to-em
 https://icons8.com/icons/set/cursor 
 http://www.barbiemedia.com/about-barbie/fast-facts.html 
 https://garfield.fandom.com/wiki/Garfield_(character) 
+
  */
 
 
