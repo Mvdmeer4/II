@@ -287,27 +287,39 @@ footer {
   scale: 2em;
 }
 
+.show{
+  display: block;
+}
 
 
 /* bronnen hier zetten */
 /* ... */
 
+/* (Mattel, sd)
+
+https://www.officetimeline.com/blog/history-of-barbie-timeline 
+https://stage.onestore.barbie.com/en-us/about/history.html
+https://en.wikipedia.org/wiki/List_of_Barbie_films
+https://en.wikipedia.org/wiki/List_of_Barbie%27s_friends_and_family
+https://medium.com/@tasyasalsabila_50333/the-phenomenal-influence-of-the-barbie-movie-a-booming-cultural-impact-cdcd1a59cf#:~:text=Fostering%20Positive%20Role%20Models%3A,values%20in%20their%20daily%20lives.
+https://www.fontbolt.com/font/barbie-font/
+https://inews.co.uk/culture/every-barbie-ken-movie-ranked-2257461
+https://looka.com/blog/barbie-logo/#:~:text=Barbie%20logo%20evolution%20summary,more%20contemporary%20typeface%20was%20introduced.
+https://www.w3schools.com/html/html_responsive.asp 
+https://turbologo.com/articles/barbie-logo/
+https://nl.pinterest.com/pin/951737333735052034/ 
+https://wifflegif.com/gifs/269888-transparent-barbie-logo-gif
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://ceconline.co.za/the-cultural-significance-and-redemption-arc-of-barbie/ 
+https://www.w3schools.com/cssref/css_pxtoemconversion.php 
+https://www.google.com/url?sa=i&url=http%3A%2F%2Fbarbiecafe.blogspot.com%2F2012%2F06%2F&psig=AOvVaw15nkgYHbhKGsjPJZdQsHNO&ust=1699468545732000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjy4enDsoIDFQAAAAAdAAAAABAE
+https://graziamagazine.com/articles/barbie-movie-characters-real-dolls/ 
+https://www.pinterest.es/pin/417357090443663368/ 
+https://devdevout.com/px-to-em 
+https://icons8.com/icons/set/cursor 
+http://www.barbiemedia.com/about-barbie/fast-facts.html 
+https://garfield.fandom.com/wiki/Garfield_(character) 
+ */
 
 
-.welkom-container {
-  text-align: center;
-}
-
-button {
-  padding: 0.625em 1.25em;
-  font-size: 1em;
-  background-color: #FF9900;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.show{
-  display: block;
-}
 
