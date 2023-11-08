@@ -29,7 +29,7 @@ barbieButton1.addEventListener("click", function () {
     document.getElementById("barbieGroot").src = "./images/Tekengebied 2.png";
 
     audio.play();
-    console.log("hoi")
+    // console.log("hoi")
 });
 
 barbieButton2.addEventListener("click", function () {
@@ -40,6 +40,9 @@ barbieButton2.addEventListener("click", function () {
     text5.classList.remove("show");
 
     document.getElementById("barbieGroot").src = "./images/Tekengebied 3.png";
+
+    audio.play();
+
 });
 
 barbieButton3.addEventListener("click", function () {
@@ -50,6 +53,9 @@ barbieButton3.addEventListener("click", function () {
     text5.classList.remove("show");
 
     document.getElementById("barbieGroot").src = "./images/Tekengebied 4.png";
+
+    audio.play();
+
 });
 
 barbieButton4.addEventListener("click", function () {
@@ -60,6 +66,9 @@ barbieButton4.addEventListener("click", function () {
     text5.classList.remove("show");
 
     document.getElementById("barbieGroot").src = "./images/Tekengebied 5.png";
+
+    audio.play();
+
 });
 
 barbieButton5.addEventListener("click", function () {
@@ -70,6 +79,9 @@ barbieButton5.addEventListener("click", function () {
     text4.classList.remove("show");
 
     document.getElementById("barbieGroot").src = "./images/Tekengebied 6.png";
+
+    audio.play();
+    
 });
 
 
